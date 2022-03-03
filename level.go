@@ -4,14 +4,14 @@ import (
 	"github.com/yayuyokitano/kitaipu"
 )
 
-func (r Remsponder) level(interaction kitaipu.Command) (contentType string, b []byte, err error) {
+func (r Remsponder) Level(interaction kitaipu.Command) (resp kitaipu.InteractionResponse, err error) {
 
-	contentType, b, err = kitaipu.InteractionResponse{
+	resp = kitaipu.InteractionResponse{
 		Type: kitaipu.CallbackUpdateMessage,
 		Data: kitaipu.InteractionResponseMessage{
 			Content: "Hallo!",
 		},
-	}.Prepare()
+	}
 
 	return
 

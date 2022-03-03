@@ -1,2 +1,4 @@
 github.com/yayuyokitano/kitaipu v0.0.0-20220301195308-c7faeab52cf3 h1:VMF0F4g0queHUEVBc7buxDc2NxxVyAzjaE5JVfJ9khU=
 github.com/yayuyokitano/kitaipu v0.0.0-20220301195308-c7faeab52cf3/go.mod h1:lEw6ZwSV4VXdMsYmqEIhWWUqZWbAnTfkBwnHVY4bnb0=
+github.com/yayuyokitano/kitaipu v0.0.0-20220303185045-4cd49fd9397d h1:mcJJm2pLJ+mYLC4/P6IlOMgVE3JGDczJm62xdwjE+eg=
+github.com/yayuyokitano/kitaipu v0.0.0-20220303185045-4cd49fd9397d/go.mod h1:lEw6ZwSV4VXdMsYmqEIhWWUqZWbAnTfkBwnHVY4bnb0=
