@@ -20,7 +20,7 @@ func CallInteraction(interaction kitaipu.Command) (resp kitaipu.InteractionRespo
 	res := method.Call(param)
 
 	err, ok := res[1].Interface().(error)
-	if !ok { // ok should be false only if err is not actually an error
+	if ok { // ok should be false only if err is not actually an error
 		return
 	}
 	resp = res[0].Interface().(kitaipu.InteractionResponse)

@@ -18,6 +18,9 @@ func TestCallInteraction(t *testing.T) {
 	if err != nil {
 		t.Error(err)
 	}
+	if resp.Type != kitaipu.CallbackChannelMessageWithSource {
+		t.Error("Type is not CallbackChannelMessageWithSource")
+	}
 	t.Log(resp)
 
 }
