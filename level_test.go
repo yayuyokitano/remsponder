@@ -1,4 +1,4 @@
-package remsponderlevel
+package remsponder
 
 import (
 	"testing"
