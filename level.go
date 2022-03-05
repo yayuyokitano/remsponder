@@ -7,10 +7,7 @@ import (
 func (r Remsponder) Level(interaction kitaipu.Command) (resp kitaipu.InteractionResponse, err error) {
 
 	resp = kitaipu.InteractionResponse{
-		Type: kitaipu.CallbackChannelMessageWithSource,
-		Data: kitaipu.InteractionResponseMessage{
-			Content: "Hallo!",
-		},
+		Content: "Hallo!",
 	}
 
 	return
