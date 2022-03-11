@@ -90,21 +90,14 @@ func TestLevel(t *testing.T) {
 		GuildID: "868012888827256882",
 		Member: kitaipu.Member{
 			User: kitaipu.User{
-				ID: "196249128286552064",
+				ID:       "196249128286552064",
+				Username: "Themex",
 			},
 		},
 		Data: kitaipu.CommandData{
 			Options: kitaipu.Options{
 				{
 					Name: "display",
-				},
-			},
-			Resolved: kitaipu.Resolved{
-				Users: map[string]kitaipu.User{
-					"196249128286552064": {
-						ID:       "196249128286552064",
-						Username: "Themex",
-					},
 				},
 			},
 		},

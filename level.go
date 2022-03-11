@@ -33,11 +33,14 @@ func (r Remsponder) Level(interaction kitaipu.Command) (resp kitaipu.Interaction
 func levelDisplay(interaction kitaipu.Command, opts kitaipu.Options) (resp kitaipu.InteractionResponse, err error) {
 
 	var userID string
+	var username string
 	user, ok := opts.Get("user")
 	if ok {
 		userID = user.Value
+		username = interaction.Data.Resolved.Users[userID].Username
 	} else {
 		userID = interaction.Member.User.ID
+		username = interaction.Member.User.Username
 	}
 
 	//select the xp number from the database
@@ -56,7 +59,7 @@ func levelDisplay(interaction kitaipu.Command, opts kitaipu.Options) (resp kitai
 	xpPct := int(100 * float64(xpCur) / float64(xpNext))
 
 	resp = kitaipu.InteractionResponse{
-		Content: fmt.Sprintf("%s has %d xp, level %d, %d%% until level %d (%dxp remaining)", interaction.Data.Resolved.Users[userID].Username, xp, level, xpPct, level+1, xpLeft),
+		Content: fmt.Sprintf("%s has %d xp, level %d, %d%% until level %d (%dxp remaining)", username, xp, level, xpPct, level+1, xpLeft),
 	}
 
 	return
