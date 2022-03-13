@@ -7,6 +7,11 @@ import (
 )
 
 func TestLevel(t *testing.T) {
+	err := createPool()
+	if err != nil {
+		t.Error(err)
+		return
+	}
 	r := Remsponder{}
 	interaction := kitaipu.Command{
 		GuildID: "12345",
