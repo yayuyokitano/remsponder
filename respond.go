@@ -32,10 +32,10 @@ func createPool() (err error) {
 	return
 }
 
-func Respond(ctx context.Context, m PubSubMessage) {
+func Respond(ctx context.Context, m PubSubMessage) (err error) {
 
 	var verifiedInteraction VerifiedInteraction
-	if err := json.Unmarshal(m.Data, &verifiedInteraction); err != nil {
+	if err = json.Unmarshal(m.Data, &verifiedInteraction); err != nil {
 		fmt.Print("Failed to unmarshal interaction", err)
 		return
 	}
@@ -46,7 +46,7 @@ func Respond(ctx context.Context, m PubSubMessage) {
 	}
 	interaction := verifiedInteraction.Interaction
 
-	err := createPool()
+	err = createPool()
 	if err != nil {
 		fmt.Print("Failed to create pool", err)
 		return
