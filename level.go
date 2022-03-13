@@ -4,21 +4,11 @@ import (
 	"context"
 	"fmt"
 	"math"
-	"os"
 
-	"github.com/jackc/pgx/v4/pgxpool"
 	"github.com/yayuyokitano/kitaipu"
 )
 
-var pool *pgxpool.Pool
-
 func (r Remsponder) Level(interaction kitaipu.Command) (resp kitaipu.InteractionResponse, err error) {
-
-	pool, err = pgxpool.Connect(context.Background(), os.Getenv("DATABASE_PRIVATE_URL"))
-	if err != nil {
-		panic(err)
-	}
-	defer pool.Close()
 
 	switch interaction.Data.Options[0].Name {
 	case "display":

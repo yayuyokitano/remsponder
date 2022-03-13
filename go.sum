@@ -104,14 +104,6 @@ github.com/stretchr/testify v1.4.0/go.mod h1:j7eGeouHqKxXV5pUuKE4zz7dFj8WfuZ+81P
 github.com/stretchr/testify v1.5.1/go.mod h1:5W2xD1RspED5o8YsWQXVCued0rvSQ+mT+I5cxcmMvtA=
 github.com/stretchr/testify v1.7.0 h1:nwc3DEeHmmLAfoZucVR881uASk0Mfjw8xYJ99tb5CcY=
 github.com/stretchr/testify v1.7.0/go.mod h1:6Fq8oRcR53rry900zMqJjRRixrwX3KX962/h/Wwjteg=
-github.com/yayuyokitano/kitaipu v0.0.0-20220305151414-a090c9c0299f h1:bTneXEk0LrnOvzHuS+F9WGyJ4Q/qN8vVJSufGb5Q+A0=
-github.com/yayuyokitano/kitaipu v0.0.0-20220305151414-a090c9c0299f/go.mod h1:lEw6ZwSV4VXdMsYmqEIhWWUqZWbAnTfkBwnHVY4bnb0=
-github.com/yayuyokitano/kitaipu v0.0.0-20220310173343-db5687d6ad5d h1:dmWQ265QfK8DWRtT1w0VlmDpmPTW/63o2c6u/pLbPXo=
-github.com/yayuyokitano/kitaipu v0.0.0-20220310173343-db5687d6ad5d/go.mod h1:lEw6ZwSV4VXdMsYmqEIhWWUqZWbAnTfkBwnHVY4bnb0=
-github.com/yayuyokitano/kitaipu v0.0.0-20220310182340-e7bbdcb9595c h1:H6yg2Zb/dg+PD9yAxtLqmDCJRCmBJIA+XiFcqTXZ6uo=
-github.com/yayuyokitano/kitaipu v0.0.0-20220310182340-e7bbdcb9595c/go.mod h1:lEw6ZwSV4VXdMsYmqEIhWWUqZWbAnTfkBwnHVY4bnb0=
-github.com/yayuyokitano/kitaipu v0.0.0-20220310185046-9c9927b1e6b4 h1:gS+L/XTxyFEWR4wvubcvoC11yKWz7H5nOhMHOhAoOHE=
-github.com/yayuyokitano/kitaipu v0.0.0-20220310185046-9c9927b1e6b4/go.mod h1:lEw6ZwSV4VXdMsYmqEIhWWUqZWbAnTfkBwnHVY4bnb0=
 github.com/yayuyokitano/kitaipu v0.0.0-20220311164712-dd8f068bf3b3 h1:xrZrZB6FRRm+jZBNYzxzsmNt2KmavS9eWXZzACfamCc=
 github.com/yayuyokitano/kitaipu v0.0.0-20220311164712-dd8f068bf3b3/go.mod h1:lEw6ZwSV4VXdMsYmqEIhWWUqZWbAnTfkBwnHVY4bnb0=
 github.com/zenazn/goji v0.9.0/go.mod h1:7S9M489iMyHBNxwZnk9/EHS098H4/F6TATF2mIxtB1Q=

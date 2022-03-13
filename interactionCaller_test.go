@@ -14,7 +14,7 @@ func TestCallInteraction(t *testing.T) {
 		t.Error(err)
 	}
 
-	resp, err := CallInteraction(i)
+	resp, err := callInteraction(i)
 	if err != nil {
 		t.Error(err)
 	}

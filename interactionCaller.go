@@ -9,7 +9,7 @@ import (
 
 type Remsponder struct{}
 
-func CallInteraction(interaction kitaipu.Command) (resp kitaipu.InteractionResponse, err error) {
+func callInteraction(interaction kitaipu.Command) (resp kitaipu.InteractionResponse, err error) {
 
 	r := Remsponder{}
 	lower := []rune(interaction.Data.Name)
